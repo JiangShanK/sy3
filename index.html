@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>实验3 网页布局</title>
+		<style>	
+				body{
+					background-color: white;
+				}			
+			.logo{
+				text-align: center;
+				font-size: 40px;
+			}
+			.photo{
+				margin: 0 auto;
+			}
+			.photo ul{
+				list-style-type:none;
+				display: flex;
+				justify-content: space-around;
+				
+			}
+             .menu{		 
+				 font-size: 20px;    
+			     line-height: 40px;
+			 }
+			 .menu ul{
+				 list-style-type:none;
+				 display: flex;
+				 justify-content: space-around;
+			 }
+
+		</style>
+	</head>
+
+	<body>
+		<div class="logo">安全教育</div>
+		<div class="menu">
+			<ul>
+				<li><a href="http://127.0.0.1:8848/ex3/earthquake.html" target="_blank">地震</a></li>
+				<li><a href="http://127.0.0.1:8848/ex3/wind.html" target="_blank">台风</a></li>
+				<li><a href="http://127.0.0.1:8848/ex3/fire.html" target="_blank">火灾</a></li>
+			</ul>
+		</div>
+		<div class="photo">
+			<ul>
+				<li><img src="res/logo1.png" width="200px"</li>
+				<li><img src="res/logo2.png" width="200px"</li>
+				<li><img src="res/logo3.png" width="200px"</li>
+			</ul>
+		</div>
+
+	</body>
+</html>
