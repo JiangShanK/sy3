@@ -7,39 +7,58 @@
 		list-style-type:none;
 		 display: flex;
 		 justify-content: space-around;
+		 body
 	}
 .main1{
 		 font-size: 30px;
 		 line-height: 5px;
-		 margin-bottom: 100px;
+		 margin-bottom: 200px;
 	 }
 	 .main2{
 		 font-size: 30px;
 		 line-height: 5px;
-		 margin-bottom: 100px;
+		 margin-bottom: 200px;
 	 }
 	.main1 img{
-		height: 150px;
+		height: 200px;
 		float: left;
 		padding-right: 40px;
 	}
+	.main1 img:hover{
+		filter: alpha(Opacity=60);
+		-moz-opacity:0.6;
+		opacity: 0.6;
+	}
 	.main2 img{
-		height: 150px;
-		float: left;
-		padding-right: 40px;
+	height: 200px;
+	float: left;
+	padding-right: 40px;}
+	
+	.main2 img:hover{
+		filter: alpha(Opacity=60);
+		-moz-opacity:0.6;
+		opacity: 0.6;
 	}
 	.menu img{
 		height: 80px;
 		float: left;
 		padding-right: 40px;
 	}
+	.menu img:hover{
+		filter: alpha(Opacity=60);
+		-moz-opacity:0.6;
+		opacity: 0.6;}
 	.main3 img{
 		height: 150px;
 		float: left;
 		padding-right: 40px;
 	}
+	.main3 img:hover{
+		filter: alpha(Opacity=60);
+		-moz-opacity:0.6;
+		opacity: 0.6;}
 	.main3{
 		font-size: 30px;
 		line-height: 5px;
-		margin-bottom: 100px;
+		margin-bottom: 200px;
 	}
