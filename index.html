@@ -9,7 +9,7 @@
 				body{
 					background-color: white;
 				}			
-			.logo{
+			#headline{
 				text-align: center;
 				font-size: 40px;
 			}
@@ -19,8 +19,12 @@
 			.photo ul{
 				list-style-type:none;
 				display: flex;
-				justify-content: space-around;
-				
+				justify-content: space-around;				
+			}
+			.photo ul img:hover{
+				filter: alpha(Opacity=60);
+				-moz-opacity:0.6;
+				opacity: 0.6;
 			}
              .menu{		 
 				 font-size: 20px;    
@@ -32,25 +36,54 @@
 				 justify-content: space-around;
 			 }
 
+
 		</style>
 	</head>
 
-	<body>
-		<div class="logo">安全教育</div>
+	<body >
+		<div  id="headline">安全教育</div>
+		<div id="div1">
+			0
+		</div>
 		<div class="menu">
 			<ul>
-				<li><a href="earthquake.html" target="_blank">地震</a></li>
-				<li><a href="wind.html" target="_blank">台风</a></li>
-				<li><a href="fire.html" target="_blank">火灾</a></li>
+				<li><a href="http://127.0.0.1:8848/ex3/earthquake.html" target="_blank">地震</a></li>
+				<li><a href="http://127.0.0.1:8848/ex3/wind.html" target="_blank">台风</a></li>
+				<li><a href="http://127.0.0.1:8848/ex3/fire.html" target="_blank">火灾</a></li>
 			</ul>
 		</div>
+		<div id="text">
 		<div class="photo">
 			<ul>
-				<li><img src="res/logo1.png" width="200px"</li>
-				<li><img src="res/logo2.png" width="200px"</li>
-				<li><img src="res/logo3.png" width="200px"</li>
+				<li><img src="res/logo1.png" width="200px" onclick="show1(this)"></li>
+				<li><img src="res/logo2.png" width="200px" onclick="show2(this)"></li>
+				<li><img src="res/logo3.png" width="200px" onclick="show3(this)"></li>
 			</ul>
 		</div>
+		</div>
+		<script type="text/javascript">
+			var left=0;
+			var raf;
+			function show1(e){
+				undefined
+				window.location.href="http://127.0.0.1:8848/ex3/earthquake.html";
+			}
+			function show2(e){
+				undefined
+				window.location.href="http://127.0.0.1:8848/ex3/wind.html";
+			}
+			function show3(e){
+				undefined
+				window.location.href="http://127.0.0.1:8848/ex3/fire.html";
+			}
+			function move(){
+				var obj=document.getElementById("text");
+				obj.style.left=left+"px";
+				left-=2;
+				raf = window.requestAnimationFrame(move);
+			}
+			move();
 
+		</script>
 	</body>
 </html>
