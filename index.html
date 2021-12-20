@@ -35,14 +35,31 @@
 				 display: flex;
 				 justify-content: space-around;
 			 }
+			#div1{
 
-
+				position: absolute;
+			}
+			#headline{
+				animation: change 4s ease infinite;
+				border-bottom-color: #00FFFF;
+			}
+			.ul.li{
+				border-color: #00FFFF;
+			}
+			#id{
+				animation: change 4s ease infinite;
+			}
+			@keyframes change{
+				0%{color: #FF0000;}
+				33%{color: blue;}
+				66%{color: #FF0000;}
+				100%{color: blue;}
+			}
 		</style>
 	</head>
 
-	<body >
-		<div  id="headline">安全教育</div>
-
+	<body>
+		<div id="headline">安全教育</div>
 		<div class="menu">
 			<ul>
 				<li><a href="earthquake.html" target="_blank">地震</a></li>
@@ -58,10 +75,9 @@
 				<li><img src="res/logo3.png" width="200px" onclick="show3(this)"></li>
 			</ul>
 		</div>
+		
 		</div>
 		<script type="text/javascript">
-			var left=0;
-			var raf;
 			function show1(e){
 				undefined
 				window.location.href="earthquake.html";
@@ -74,13 +90,6 @@
 				undefined
 				window.location.href="fire.html";
 			}
-			function move(){
-				var obj=document.getElementById("text");
-				obj.style.left=left+"px";
-				left-=2;
-				raf = window.requestAnimationFrame(move);
-			}
-			move();
 
 		</script>
 	</body>
