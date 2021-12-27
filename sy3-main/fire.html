@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火灾</title>
+    <style>	
+	 #div1{
+		position: absolute;
+		height: 20px;
+		font-size: 15px;
+		color: red;
+	 }
+	  </style>
+	  <script src="js/jquery-1.8.3.min.js"></script>
+	  <script>
+		$(document).ready(function(){
+			$("#headline").click(function(){
+				$("#headline").css("color","yellow");
+			});
+		});
+	  </script>
+	  <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+	<div id="headline">安全教育</div>
+	<div class="menu">
+		 <img src="res/car.png">
+		<ul>
+			<li><a href="index.html" target="_blank" color="white">首页</a></li>
+			<li><a href="earthquake.html" target="_blank">地震</a></li>
+			<li><a href="wind.html" target="_blank">台风</a></li>
+			<li><a href="fire.html" target="_blank">火灾</a></li>
+		</ul>
+	</div>
+	<div id="div1">
+		火灾 火灾 火灾
+	</div>
+   <div class="main1">
+	<img src="res/fireman.png">
+	<p>设法减少烟、火危害。逃生时，应以防毒面具或湿毛巾掩口鼻呼吸，降低姿势，以减少吸入浓烟。</p>
+	<p>烟雾弥漫中，一般离地面三十公分仍有残存空气可以利用，可采取低姿势逃生，爬行时将手心、手肘、膝盖紧靠地面，并沿墙壁</p>
+    <p>边缘逃生，以免错失方向。若逃生途中经过火焰区，应先弄湿衣物或湿棉被、毛毯裹住身体，迅速通过以免身体着火。</p>
+   </div>
+   <div class="main2">
+	   <img src="res/fire1.png">
+	   <p>逃生路线被火封堵时，应及时关闭房间门窗，用湿的织物封堵门窗缝隙，防止烟火窜入，并迅速向外发出求救信号，</p>
+	   <p>到易获救的地方等待救援(如靠近马路的窗口附近或与入口较近的房间等);</p>
+	   <p>身处平房的，如果门的周围火势不大，应迅速离开火场。反之，则必须另行选择出口脱身（如从窗口跳出），</p>
+	   <p>或者采取保护措施（如用水淋湿衣服、用温湿的棉被包住头部和上身等）以后再离开火场。</p>
+   </div>
+   <div class="main3">
+	  <img src="res/tool.png">
+	 <p>身处楼房的，不要盲目乱跑、更不要跳楼逃生，这样会造成不应有的伤亡。可以躲到居室里或者阳台上。</p>
+	 <p>紧闭门窗，隔断火路，等待救援。有条件的，可以不断向门窗上浇水降温，以延缓火势蔓延。在失火的</p>
+	 <p>楼房内，逃生不可使用电梯，应通过防火通道走楼梯脱险。因为失火后电梯竖井往往成为烟火的通道。</p>
+	 <p>并且电梯随时可能发生故障</p>
+   </div>
+   <script>
+   var list;
+   var left=0;
+   var raf;
+   list=document.getElementById("div1");
+   function move(){
+   	list.style.left=left+"px";
+   	left+=2;
+   	raf=requestAnimationFrame(move);
+   	if(left>=1650)
+   		left=0;
+   }
+   move();
+   </script>
+</body>
+</html>

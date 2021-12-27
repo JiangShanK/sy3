@@ -1,0 +1,70 @@
+.menu{
+		font-size: 20px;    
+	    line-height: 40px;
+		height: 100px;
+	}
+.menu ul{
+		list-style-type:none;
+		 display: flex;
+		 justify-content: space-around;
+		 body
+	}
+.main1{
+		 font-size: 30px;
+		 line-height: 5px;
+		 margin-bottom: 200px;
+	 }
+	 .main2{
+		 font-size: 30px;
+		 line-height: 5px;
+		 margin-bottom: 200px;
+	 }
+	.main1 img{
+		height: 200px;
+		float: left;
+		padding-right: 40px;
+		animation: show1 4s ease infinite;
+	}
+	@keyframes show1{
+		0%{opacity: 0.1;}
+		25%{opacity: 0.5;}
+		50%{opacity: 1;}
+		75%{opacity: 0.5;}
+		100%{opacity: 0.1;}
+	}
+	.main2 img{
+		height: 200px;
+		float: left;
+		padding-right: 40px;
+		animation: show1 4s ease infinite;
+	}	
+	.menu img{
+		height: 80px;
+		float: left;
+		padding-right: 40px;
+		animation: show1 4s ease infinite;
+	}	
+	.main3 img{
+		height: 150px;
+		float: left;
+		padding-right: 40px;
+		animation: show1 4s ease infinite;
+	}	
+	.main3{
+		font-size: 30px;
+		line-height: 5px;
+		margin-bottom: 200px;
+	}
+	#div1{
+		animation: change 2s ease infinite;
+	}
+	@keyframes change{
+		0%{color: #FF0000;}
+		33%{color: blue;}
+		66%{color: #FF0000;}
+		100%{color: blue;}
+	}
+	#headline{
+		text-align: center;
+		font-size: 40px;
+	}

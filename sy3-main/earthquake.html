@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>地震</title>
+		<style>
+			#div1{
+				position: absolute;
+			}
+		</style>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script>
+				$(document).ready(function(){
+					$("#headline").click(function(){
+						$("#headline").css("color","yellow");
+					});
+				});
+		</script>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	</head>
+
+	<body>
+		<div id="headline">安全教育</div>
+		<div class="menu">
+			 <img src="res/earthq3.png">
+			<ul>
+				<li><a href="index.html" target="_blank">首页</a></li>
+				<li><a href="earthquake.html" target="_blank">地震</a></li>
+				<li><a href="wind.html" target="_blank">台风</a></li>
+				<li><a href="fire.html" target="_blank">火灾</a></li>
+			</ul>
+		</div>
+		<div id="div1">
+			地震 地震 地震
+		</div>
+		<div class="main1" >
+			<img src="res/earthquake1.png">
+			<p>针对地震的逃生我们需要我们需要谨记三个原则</p>
+			<p>先是“因地制宜，正确选择”。也就是说，当我们面临地震时，要根据自己所处的地方和所面对的情况选择逃生方式</p>
+			<p>例如当地震发生时你处于室内，如果楼层较低且室内人员并不拥挤，那么可以在有秩序的组织下进行逃离。</p>
+			<p>如果楼层过高或者室内人员拥挤，那么千万不要轻举妄动，应该保持镇静，快速寻找掩体以保护自己的身体。</p>
+			<p>如果贸然离开，可能会出现时间不够或是踩踏事故的发生。</p>
+		</div>
+		<div class="main2" >
+			   <img src="res/earthqua2.png">
+			   <p>然后是“行动果断、切忌犹豫”。也就是说，遇到地震时千万不要惊慌失措，而应该保持冷静。保持头脑清醒，并快速对情</p>
+			   <p>况作出判断选择恰当的逃生方式。最后是“伏而待定，不可疾出”。这也就是说，在确认地震完全过去之前不要轻举妄动。</p>
+			   <p>因为地震的发生充满了不确定性，如果不能确保地震已经完全结束不要贸然地离开掩体。</p>
+		</div>
+		<script>
+		var list;
+		var left=0;
+		var raf;
+		list=document.getElementById("div1");
+		function move(){
+			list.style.left=left+"px";
+			left+=2;
+			raf=requestAnimationFrame(move);
+			if(left>=1650)
+				left=0;
+		}
+		move();
+		</script>
+	</body>
+</html>
