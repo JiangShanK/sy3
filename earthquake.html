@@ -10,10 +10,19 @@
 				position: absolute;
 			}
 		</style>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script>
+				$(document).ready(function(){
+					$("#headline").click(function(){
+						$("#headline").css("color","yellow");
+					});
+				});
+		</script>
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	</head>
 
 	<body>
+		<div id="headline">安全教育</div>
 		<div class="menu">
 			 <img src="res/earthq3.png">
 			<ul>

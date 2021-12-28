@@ -21,11 +21,11 @@
 				display: flex;
 				justify-content: space-around;				
 			}
-			.photo ul img:hover{
+			/* .photo ul img:hover{
 				filter: alpha(Opacity=60);
 				-moz-opacity:0.6;
 				opacity: 0.6;
-			}
+			} */
              .menu{		 
 				 font-size: 20px;    
 			     line-height: 40px;
@@ -36,12 +36,7 @@
 				 justify-content: space-around;
 			 }
 			#div1{
-
 				position: absolute;
-			}
-			#headline{
-				animation: change 4s ease infinite;
-				border-bottom-color: #00FFFF;
 			}
 			.ul.li{
 				border-color: #00FFFF;
@@ -70,27 +65,28 @@
 		<div id="text">
 		<div class="photo">
 			<ul>
-				<li><img src="res/logo1.png" width="200px" onclick="show1(this)"></li>
-				<li><img src="res/logo2.png" width="200px" onclick="show2(this)"></li>
-				<li><img src="res/logo3.png" width="200px" onclick="show3(this)"></li>
+				<li><img id="i1" src="res/logo1.png" width="200px" onclick="show1(this)"></li>
+				<li><img id="i2"src="res/logo2.png" width="200px" onclick="show2(this)"></li>
+				<li><img id="i3" src="res/logo3.png" width="200px" onclick="show3(this)"></li>
 			</ul>
 		</div>
 		
 		</div>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript">
-			function show1(e){
-				undefined
+			$("#i1").click(function(){
 				window.location.href="earthquake.html";
-			}
-			function show2(e){
-				undefined
+			})
+			$("#i2").click(function(){
 				window.location.href="wind.html";
-			}
-			function show3(e){
-				undefined
+			})
+			$("#i3").click(function(){
 				window.location.href="fire.html";
-			}
-
+			})
+			$("#i1").onmouseover(function(){
+				$("#1").css('opacity','0.5')
+			})
+			
 		</script>
 	</body>
 </html>
